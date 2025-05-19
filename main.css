@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+body
+{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background: #0411cf;
+overflow: hidden;
+}
+
+
+.loader
+{
+position: relative;
+width: 650px;
+height: 550px;
+}
+
+h3 
+{
+color: #fff;
+font-weight: 5;
+text-shadow: 0 0 10px #fff,
+0 0 20px #ffffff,
+0 0 30px #fff,
+0 0 40px #fff,
+0 0 50px #fff,
+}
+.loader span
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 90%;
+height: 100%;
+transform: rotate(calc(20deg * var(--i)));
+}
+.loader span::before
+{
+content: ' ';
+position: absolute;
+top: 0;
+left: 0;
+width: 20px;
+height: 20px;
+background: #f0b923;
+animation: squareRotate 4s linear infinite;
+}
+.loader span::after
+{
+content: ' ';
+position: absolute;
+top: 50%;
+left: 20px;
+width: 5px;
+height: 5px;
+background: #f0b923;
+}
+
+@keyframes squareRotate
+{
+100%
+{
+transform: rotate(0deg);
+}
+100%
+{
+transform: rotate(360deg);
+}
+}
+img {
+width: 500px;
+height: 500px;
+border-radius: 50%;
+object-fit: cover;
+}
+nav {
+position: relative; /* or relative, fixed */
+top: -400px; /* Moves it 20px from the top */
+left: 0px; /* Moves it 50px from the left */
+}
+
+
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+}
+
+nav {
+background-color: #cca63e;;
+overflow: hidden;
+}
+
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+display: flex;
+}
+
+nav ul li {
+flex: 1;
+}
+
+nav ul li a {
+display: block;
+color: white;
+text-align: center;
+padding: 34px 30px;
+text-decoration: none;
+}
+
+nav ul li a:hover {
+background-color: #f0b923;;
+}
+
+
+.logo 
+{
+position: absolute;
+width: 100%;
+min-height: 500vh;
+padding: 5 100px;
+display: flex;    
+transform: translate(50px, -500px);
+justify-content: space-between;
+background: url('./images/logo/logo.PNG') no-repeat;
+align-items: center;
+
+}
+.container {
+position: relative;
+height: 100vh; /* Full viewport height */
+}
+
+img {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-55%, -50%); /* Centers the image */
+}
+
+
+

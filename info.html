@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Babysitting Customer Info</title>
+  <link rel="stylesheet" href="info.css">
+</head>
+<body>
+  <header>
+    <h1>Babysitting Customer Info</h1>
+    <p>Please fill out the form below to provide your details.</p>
+  </header>
+  
+  <main>
+    <form class="info-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+      <label for="children">Number of Children:</label>
+      <input type="number" id="children" name="children" min="1" placeholder="Enter number of children" required>
+
+      <label for="preferences">Babysitting Preferences:</label>
+      <textarea id="preferences" name="preferences" rows="4" placeholder="Enter any special instructions or preferences"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Babysitting Services. All rights reserved.</p>
+  </footer>
+</body>
+</html>
